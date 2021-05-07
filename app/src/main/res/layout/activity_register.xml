@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    tools:context=".ui.register.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/reg_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/signup_photo" />
+
+
+    <EditText
+        android:id="@+id/register_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/inputs"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/email"
+        android:padding="1dp"
+        android:textColor="@color/fontColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"        android:background="@drawable/inputs"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:padding="1dp"
+        android:textColor="@color/fontColor"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/register_back_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:text="Already Have an Account"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+</LinearLayout>

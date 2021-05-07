@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.settings.SettingsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/register_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+    </androidx.appcompat.widget.Toolbar>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_img"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginBottom="30dp"
+        android:padding="4dp"
+        android:src="@drawable/profile_image"
+        />
+
+    <EditText
+        android:id="@+id/settings_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/inputs"
+        android:hint="Name"
+        android:padding="@dimen/_1sdp"
+        android:drawableStart="@drawable/edit_profile"
+        android:textColor="@color/fontColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/settings_user_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/inputs"
+        android:inputType="text"
+        android:padding="@dimen/_1sdp"
+        android:drawableStart="@drawable/edit_status"
+        android:hint="I am available now..."
+        android:textColor="@color/fontColor"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/settings_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context=".ui.login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_157sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/chats" />
+
+    <EditText
+        android:id="@+id/login_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:hint="Email"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:padding="1dp"
+        android:textColor="@color/fontColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:drawableStart="@drawable/password"
+        android:padding="1dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:hint="Password"
+        android:background="@drawable/inputs"
+        android:inputType="textPassword"
+        android:textColor="@color/fontColor"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/login_create_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:text="Create New Account"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+</LinearLayout>
